@@ -4,6 +4,7 @@
  * Licensing: MIT
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.extractKeyValue = exports.isKeyValuePair = void 0;
 const tslib_1 = require("tslib");
 const ArgumentNullException_1 = tslib_1.__importDefault(require("@tsdotnet/exceptions/dist/ArgumentNullException"));
 const ArgumentException_1 = tslib_1.__importDefault(require("@tsdotnet/exceptions/dist/ArgumentException"));

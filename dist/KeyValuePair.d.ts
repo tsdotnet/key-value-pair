@@ -1,6 +1,6 @@
 /*!
  * @author electricessence / https://github.com/electricessence/
- * Licensing: MIT
+ * @license MIT
  */
 
 export default interface KeyValuePair<TKey, TValue>

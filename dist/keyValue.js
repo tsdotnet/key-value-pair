@@ -8,7 +8,7 @@ exports.extractKeyValue = exports.isKeyValuePair = void 0;
 const tslib_1 = require("tslib");
 const ArgumentNullException_1 = tslib_1.__importDefault(require("@tsdotnet/exceptions/dist/ArgumentNullException"));
 const ArgumentException_1 = tslib_1.__importDefault(require("@tsdotnet/exceptions/dist/ArgumentException"));
-const type_1 = tslib_1.__importDefault(require("@tsdotnet/compare/dist/type"));
+const type_1 = tslib_1.__importDefault(require("@tsdotnet/type"));
 const VOID0 = void 0, DOT = '.', KEY = 'key', VALUE = 'value', ITEM = 'item', ITEM_1 = ITEM + '[1]', ITEM_VALUE = ITEM + DOT + VALUE, INVALID_KVP_MESSAGE = 'Invalid type.  Must be a KeyValuePair or Tuple of length 2.', CANNOT_BE_UNDEFINED = 'Cannot equal undefined.';
 /**
  * Returns true if an object has a key and a value property.

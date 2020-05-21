@@ -1,12 +1,12 @@
 /*!
  * @author electricessence / https://github.com/electricessence/
- * Licensing: MIT
+ * @license MIT
  */
 
 import KeyValuePair, {KeyValuePairOrTuple} from './KeyValuePair';
 import ArgumentNullException from '@tsdotnet/exceptions/dist/ArgumentNullException';
 import ArgumentException from '@tsdotnet/exceptions/dist/ArgumentException';
-import type from '@tsdotnet/compare/dist/type';
+import type from '@tsdotnet/type';
 
 const
 	VOID0: undefined            = void 0,

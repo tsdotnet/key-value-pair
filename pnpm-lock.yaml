@@ -1,4 +1,5 @@
 dependencies:
+  '@tsdotnet/common-interfaces': 1.0.4
   '@tsdotnet/exceptions': 1.0.16
   '@tsdotnet/type': 1.0.8
   tslib: 2.0.0
@@ -3001,6 +3002,7 @@ packages:
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
+  '@tsdotnet/common-interfaces': ^1.0.4
   '@tsdotnet/exceptions': ^1.0.16
   '@tsdotnet/type': ^1.0.8
   '@types/chai': ^4.2.11

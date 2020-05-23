@@ -3,10 +3,10 @@
  * @license MIT
  */
 
-import KeyValuePair, {KeyValuePairOrTuple} from './KeyValuePair';
-import ArgumentNullException from '@tsdotnet/exceptions/dist/ArgumentNullException';
 import ArgumentException from '@tsdotnet/exceptions/dist/ArgumentException';
+import ArgumentNullException from '@tsdotnet/exceptions/dist/ArgumentNullException';
 import type from '@tsdotnet/type';
+import KeyValuePair, {KeyValuePairOrTuple} from './KeyValuePair';
 
 const
 	VOID0: undefined            = void 0,
@@ -24,9 +24,9 @@ const
  * @param kvp
  * @returns {kvp is KeyValuePair<TKey, TValue>}
  */
-export function isKeyValuePair<TKey, TValue> (kvp: any): kvp is KeyValuePair<TKey, TValue>
+export function isKeyValuePair<TKey, TValue> (kvp: unknown): kvp is KeyValuePair<TKey, TValue>
 {
-	return kvp && KEY in kvp && VALUE in kvp;
+	return kvp && KEY in (kvp as any) && VALUE in (kvp as any);
 }
 
 function assertKey<TKey> (key: TKey, name: string = ITEM): TKey | never

@@ -26,7 +26,7 @@ const
  */
 export function isKeyValuePair<TKey, TValue> (kvp: unknown): kvp is KeyValuePair<TKey, TValue>
 {
-	return kvp && KEY in (kvp as any) && VALUE in (kvp as any);
+	return kvp!=null && KEY in (kvp as any) && VALUE in (kvp as any);
 }
 
 function assertKey<TKey> (key: TKey, name: string = ITEM): TKey | never

@@ -16,7 +16,7 @@ const VOID0 = void 0, DOT = '.', KEY = 'key', VALUE = 'value', ITEM = 'item', IT
  * @returns {kvp is KeyValuePair<TKey, TValue>}
  */
 function isKeyValuePair(kvp) {
-    return kvp && KEY in kvp && VALUE in kvp;
+    return kvp != null && KEY in kvp && VALUE in kvp;
 }
 exports.isKeyValuePair = isKeyValuePair;
 function assertKey(key, name = ITEM) {

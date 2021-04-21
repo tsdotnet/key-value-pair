@@ -12,7 +12,7 @@ const VOID0 = void 0, DOT = '.', KEY = 'key', VALUE = 'value', ITEM = 'item', IT
  * @returns {kvp is KeyValuePair<TKey, TValue>}
  */
 export function isKeyValuePair(kvp) {
-    return kvp && KEY in kvp && VALUE in kvp;
+    return kvp != null && KEY in kvp && VALUE in kvp;
 }
 function assertKey(key, name = ITEM) {
     assertNotUndefined(key, name + DOT + KEY);

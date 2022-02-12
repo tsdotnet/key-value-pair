@@ -3,6 +3,8 @@
  * @license MIT
  */
 import KeyValuePair, { KeyValuePairOrTuple } from './KeyValuePair';
+export { KeyValuePair, KeyValuePairOrTuple };
+export { StringKeyValuePair, StringKeyValuePairOrTuple } from './KeyValuePair';
 /**
  * Returns true if an object has a key and a value property.
  * @param kvp

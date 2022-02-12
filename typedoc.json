@@ -1,6 +1,6 @@
 {
   "entryPoints": [
-    "./src"
+    "./src/keyValue.ts"
   ],
   "exclude": [
     "./src/index.ts"

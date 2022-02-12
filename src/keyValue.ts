@@ -8,6 +8,16 @@ import ArgumentNullException from '@tsdotnet/exceptions/dist/ArgumentNullExcepti
 import type from '@tsdotnet/type';
 import KeyValuePair, {KeyValuePairOrTuple} from './KeyValuePair';
 
+export {
+	KeyValuePair,
+	KeyValuePairOrTuple
+};
+
+export {
+	StringKeyValuePair,
+	StringKeyValuePairOrTuple
+} from './KeyValuePair';
+
 const
 	VOID0: undefined            = void 0,
 	DOT: string                 = '.',

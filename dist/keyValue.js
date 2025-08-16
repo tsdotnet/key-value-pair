@@ -4,7 +4,8 @@
  * @license MIT
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.extractKeyValue = exports.isKeyValuePair = void 0;
+exports.isKeyValuePair = isKeyValuePair;
+exports.extractKeyValue = extractKeyValue;
 const tslib_1 = require("tslib");
 const ArgumentException_1 = tslib_1.__importDefault(require("@tsdotnet/exceptions/dist/ArgumentException"));
 const ArgumentNullException_1 = tslib_1.__importDefault(require("@tsdotnet/exceptions/dist/ArgumentNullException"));
@@ -18,7 +19,6 @@ const VOID0 = void 0, DOT = '.', KEY = 'key', VALUE = 'value', ITEM = 'item', IT
 function isKeyValuePair(kvp) {
     return kvp != null && KEY in kvp && VALUE in kvp;
 }
-exports.isKeyValuePair = isKeyValuePair;
 function assertKey(key, name = ITEM) {
     assertNotUndefined(key, name + DOT + KEY);
     if (key === null)
@@ -57,6 +57,5 @@ function extractKeyValue(item, to) {
     }
     return to(key, value);
 }
-exports.extractKeyValue = extractKeyValue;
 exports.default = extractKeyValue;
 //# sourceMappingURL=keyValue.js.map

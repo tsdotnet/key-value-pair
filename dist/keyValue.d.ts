@@ -2,9 +2,9 @@
  * @author electricessence / https://github.com/electricessence/
  * @license MIT
  */
-import KeyValuePair, { KeyValuePairOrTuple } from './KeyValuePair';
+import type { default as KeyValuePair, KeyValuePairOrTuple } from './KeyValuePair.d.ts';
 export { KeyValuePair, KeyValuePairOrTuple };
-export { StringKeyValuePair, StringKeyValuePairOrTuple } from './KeyValuePair';
+export type { StringKeyValuePair, StringKeyValuePairOrTuple } from './KeyValuePair.d.ts';
 /**
  * Returns true if an object has a key and a value property.
  * @param kvp

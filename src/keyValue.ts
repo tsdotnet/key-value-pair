@@ -3,20 +3,19 @@
  * @license MIT
  */
 
-import ArgumentException from '@tsdotnet/exceptions/dist/ArgumentException';
-import ArgumentNullException from '@tsdotnet/exceptions/dist/ArgumentNullException';
+import {ArgumentException, ArgumentNullException} from '@tsdotnet/exceptions';
 import type from '@tsdotnet/type';
-import KeyValuePair, {KeyValuePairOrTuple} from './KeyValuePair';
+import type {default as KeyValuePair, KeyValuePairOrTuple} from './KeyValuePair.d.ts';
 
 export {
 	KeyValuePair,
 	KeyValuePairOrTuple
 };
 
-export {
+export type {
 	StringKeyValuePair,
 	StringKeyValuePairOrTuple
-} from './KeyValuePair';
+} from './KeyValuePair.d.ts';
 
 const
 	VOID0: undefined            = void 0,

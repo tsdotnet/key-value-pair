@@ -10,11 +10,6 @@ const tslib_1 = require("tslib");
 const exceptions_1 = require("@tsdotnet/exceptions");
 const type_1 = tslib_1.__importDefault(require("@tsdotnet/type"));
 const VOID0 = void 0, DOT = '.', KEY = 'key', VALUE = 'value', ITEM = 'item', ITEM_1 = ITEM + '[1]', ITEM_VALUE = ITEM + DOT + VALUE, INVALID_KVP_MESSAGE = 'Invalid type.  Must be a KeyValuePair or Tuple of length 2.', CANNOT_BE_UNDEFINED = 'Cannot equal undefined.';
-/**
- * Returns true if an object has a key and a value property.
- * @param kvp
- * @returns {kvp is KeyValuePair<TKey, TValue>}
- */
 function isKeyValuePair(kvp) {
     return kvp != null && KEY in kvp && VALUE in kvp;
 }
@@ -34,12 +29,6 @@ function assertNotUndefined(value, name) {
         throw new exceptions_1.ArgumentException(name, CANNOT_BE_UNDEFINED);
     return value;
 }
-/**
- * Processes a key-value pair through a delegate function.
- * @param {KeyValuePairOrTuple<TKey, TValue>} item A KeyValuePair object, or a tuple of key (0) and value (1)
- * @param {(key: TKey, value: TValue) => TResult} to The delegate to produce a result from.
- * @returns {TResult}
- */
 function extractKeyValue(item, to) {
     let key, value;
     if (type_1.default.isArrayLike(item)) {

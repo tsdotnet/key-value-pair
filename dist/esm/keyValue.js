@@ -1,16 +1,12 @@
+import { ArgumentException, ArgumentNullException } from '@tsdotnet/exceptions';
+import type from '@tsdotnet/type';
+
 /*!
  * @author electricessence / https://github.com/electricessence/
  * @license MIT
  */
-import { ArgumentException, ArgumentNullException } from '@tsdotnet/exceptions';
-import type from '@tsdotnet/type';
 const VOID0 = void 0, DOT = '.', KEY = 'key', VALUE = 'value', ITEM = 'item', ITEM_1 = ITEM + '[1]', ITEM_VALUE = ITEM + DOT + VALUE, INVALID_KVP_MESSAGE = 'Invalid type.  Must be a KeyValuePair or Tuple of length 2.', CANNOT_BE_UNDEFINED = 'Cannot equal undefined.';
-/**
- * Returns true if an object has a key and a value property.
- * @param kvp
- * @returns {kvp is KeyValuePair<TKey, TValue>}
- */
-export function isKeyValuePair(kvp) {
+function isKeyValuePair(kvp) {
     return kvp != null && KEY in kvp && VALUE in kvp;
 }
 function assertKey(key, name = ITEM) {
@@ -29,13 +25,7 @@ function assertNotUndefined(value, name) {
         throw new ArgumentException(name, CANNOT_BE_UNDEFINED);
     return value;
 }
-/**
- * Processes a key-value pair through a delegate function.
- * @param {KeyValuePairOrTuple<TKey, TValue>} item A KeyValuePair object, or a tuple of key (0) and value (1)
- * @param {(key: TKey, value: TValue) => TResult} to The delegate to produce a result from.
- * @returns {TResult}
- */
-export function extractKeyValue(item, to) {
+function extractKeyValue(item, to) {
     let key, value;
     if (type.isArrayLike(item)) {
         assertTuple(item);
@@ -51,5 +41,6 @@ export function extractKeyValue(item, to) {
     }
     return to(key, value);
 }
-export default extractKeyValue;
+
+export { extractKeyValue as default, extractKeyValue, isKeyValuePair };
 //# sourceMappingURL=keyValue.js.map

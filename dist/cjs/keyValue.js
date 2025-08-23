@@ -11,7 +11,7 @@ const exceptions_1 = require("@tsdotnet/exceptions");
 const type_1 = tslib_1.__importDefault(require("@tsdotnet/type"));
 const VOID0 = void 0, DOT = '.', KEY = 'key', VALUE = 'value', ITEM = 'item', ITEM_1 = ITEM + '[1]', ITEM_VALUE = ITEM + DOT + VALUE, INVALID_KVP_MESSAGE = 'Invalid type.  Must be a KeyValuePair or Tuple of length 2.', CANNOT_BE_UNDEFINED = 'Cannot equal undefined.';
 function isKeyValuePair(kvp) {
-    return kvp != null && KEY in kvp && VALUE in kvp;
+    return kvp != null && typeof kvp === 'object' && KEY in kvp && VALUE in kvp;
 }
 function assertKey(key, name = ITEM) {
     assertNotUndefined(key, name + DOT + KEY);

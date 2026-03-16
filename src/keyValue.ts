@@ -5,7 +5,7 @@
 
 import {ArgumentException, ArgumentNullException} from '@tsdotnet/exceptions';
 import type from '@tsdotnet/type';
-import type {default as KeyValuePair, KeyValuePairOrTuple} from './KeyValuePair.d.ts';
+import type {default as KeyValuePair, KeyValuePairOrTuple} from './KeyValuePair.js';
 
 export {
 	KeyValuePair,
@@ -15,7 +15,7 @@ export {
 export type {
 	StringKeyValuePair,
 	StringKeyValuePairOrTuple
-} from './KeyValuePair.d.ts';
+} from './KeyValuePair.js';
 
 const
 	VOID0: undefined            = void 0,

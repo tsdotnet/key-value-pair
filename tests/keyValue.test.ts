@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { isKeyValuePair, extractKeyValue } from '../src/keyValue';
+import { isKeyValuePair, extractKeyValue } from '../src/keyValue.js';
 import { ArgumentException, ArgumentNullException } from '@tsdotnet/exceptions';
 
 describe('KeyValuePair', () => {

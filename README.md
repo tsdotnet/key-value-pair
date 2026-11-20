@@ -1,4 +1,4 @@
-<a href="https://tsdotnet.github.io/key-value-pair/"><img src="https://cdn.jsdelivr.net/gh/tsdotnet/key-value-pair@master/assets/banner.svg" alt="@tsdotnet/key-value-pair: Pairs, or tuples. One shape for key and value."></a>
+<a name="banner"><img src="https://cdn.jsdelivr.net/gh/tsdotnet/key-value-pair@master/assets/banner.svg" alt="@tsdotnet/key-value-pair: Pairs, or tuples. One shape for key and value."></a>
 
 [![npm version](https://img.shields.io/npm/v/@tsdotnet/key-value-pair.svg?style=flat-square)](https://www.npmjs.com/package/@tsdotnet/key-value-pair)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/tsdotnet/key-value-pair/blob/master/LICENSE)

@@ -4,6 +4,10 @@
     (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory((global.tsdotnet = global.tsdotnet || {}, global.tsdotnet.keyValuePair = global.tsdotnet.keyValuePair || {}), global.tsdotnet.exceptions, global.tsdotnet.type));
 })(this, (function (exports, exceptions, type) { 'use strict';
 
+    function _interopDefault (e) { return e && e.__esModule ? e : { default: e }; }
+
+    var type__default = /*#__PURE__*/_interopDefault(type);
+
     /*!
      * @author electricessence / https://github.com/electricessence/
      * @license MIT
@@ -30,7 +34,7 @@
     }
     function extractKeyValue(item, to) {
         let key, value;
-        if (type.isArrayLike(item)) {
+        if (type__default.default.isArrayLike(item)) {
             assertTuple(item);
             key = item[0];
             value = assertNotUndefined(item[1], ITEM_1);
